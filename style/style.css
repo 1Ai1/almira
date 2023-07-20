@@ -60,7 +60,37 @@ header{
     background-color: #87CEFA;
     border: none;
     border-radius: 1rem;
+    animation: button 1s infinite;
 }
 .greeting button:hover{
     filter: brightness(90%);
 }
+@keyframes button{
+    0%{
+        box-shadow: 0 0 0 0px #87CEFA;
+    }
+    100%{
+        box-shadow: 0 0 0 .5rem #87CEFA;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .logo{
+        font-size: 1.75rem;
+    }
+    .whatsapp,.instagram{
+        width: 2rem;
+    }
+    .greeting{
+        height: 50vh;
+        background-size: cover;
+    }
+    .greeting h1{
+        font-size: 1rem;
+    }
+    .greeting p{
+        font-size: .75rem;
+    }
+    .greeting button{
+        padding: 0.5rem;
+    }
+  }
